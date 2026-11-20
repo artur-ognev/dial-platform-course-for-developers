@@ -1,5 +1,45 @@
 {
   "models": {
-
+    "gpt-5.2": {
+      "displayName": "GPT 5.2",
+      "description": "GPT‑5.2 is OpenAI’s most capable and efficient frontier model, built to deliver faster, more reliable results across complex professional and agentic workflows.",
+      "endpoint": "http://adapter-dial-openai:5000/openai/deployments/gpt-5.2/chat/completions",
+      "overrideName": "gpt-5.2",
+      "responsesEndpoint": "http://adapter-dial-openai:5000/openai/v1/responses",
+      "iconUrl": "http://localhost:3001/gpt3",
+      "type": "chat"
+    },
+    "gpt-image-1-mini": {
+      "displayName": "GPT Image 1 Mini",
+      "description": "Image generation by GPT Image 1 mini",
+      "endpoint": "http://adapter-dial-openai:5000/openai/deployments/gpt-image-1-mini/chat/completions",
+      "iconUrl": "http://localhost:3001/gpt3.svg",
+      "type": "chat"
+    },
+    "s2.1-pro-free:free": {
+      "displayName": "Fish Audio S2.1 Pro Free",
+      "description": "Converts Text to Audio (speech)",
+      "endpoint": "http://adapter-dial-openai:5000/openai/deployments/s2.1-pro-free:free/chat/completions",
+      "iconUrl": "http://localhost:3001/gpt3.svg",
+      "type": "chat",
+      "defaults": {
+        "custom_fields": {
+          "configuration": {
+            "voice": "alloy",
+            "response_format": "mp3"
+          }
+        }
+      }
+    },
+    "whisper-1": {
+      "displayName": "GPT 4o Mini STT",
+      "description": "Transcribes Audio to Text",
+      "endpoint": "http://adapter-dial-openai:5000/openai/deployments/whisper-1/chat/completions",
+      "iconUrl": "http://localhost:3001/gpt3.svg",
+      "type": "chat",
+      "inputAttachmentTypes": [
+         "audio/mpeg"
+      ]
+   }
   }
 }

@@ -1,5 +1,9 @@
 core/models-keys.json
 
+/core-data
+/core-logs
+/settings
+
 # Virtual environments
 .venv/
 venv/
